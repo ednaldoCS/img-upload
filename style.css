@@ -1,0 +1,127 @@
+body{
+	background: lightblue;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body>div{
+	background: white;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 300px;
+	box-shadow: 1px 4px 6px black;
+	border-radius: 12px;
+}
+.areaUpload{
+	width: 400px;
+	background: rgba(0, 0, 0, .3);
+}
+
+#inputFile{
+	display: none;
+}
+
+.title{
+	text-align: center;
+}
+
+.title span{
+	display: none;
+}
+
+.title h5{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.dragDrop{
+	height: 200px;
+	padding: 20px;
+	background: ;
+}  
+
+.dragDrop img{
+	height: 100%;
+	width: 100%; 
+}
+
+.chooseFile{
+	text-align: center;
+}
+
+.chooseFile button{
+	padding: 10px;
+	border-radius: 12px;
+	border: none;
+	background: skyblue ;
+	opacity: .9;
+} 
+
+.chooseFile button:hover{
+	opacity: 2;
+}
+
+.areaProgress{
+	background: blue;
+	display: none;
+}
+
+.progressBar{
+	height:10px;
+	background: white;
+	margin: 10px 0;
+}
+.progressBar h4{
+	font-size: 15px;
+}
+
+.bar{
+	width: 0%;
+	background: red;
+	height: inherit;
+}
+
+.uplouding{
+	animation: progress infinite linear .3s;
+}
+
+.copyLinkArea{
+	display: flex;
+	background: darkcyan;
+	justify-content: space-between;
+	border-radius: 12px;
+	align-items: center;
+	display: none;
+	margin: 10px;
+}
+
+.copyLinkArea input{
+	height: 100%;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: white;
+	font-size: 15px;
+	padding: 4px 10px;
+	width: 100%;
+}
+.copyLinkArea button{
+	padding: 10px;
+	background: red;
+	border: none;
+	height: 100%;
+	border-radius: 12px;
+}
+
+@keyframes progress {
+    0% { width: 0; }
+    50% { width: 50%; }
+    100% {width: 100%}
+}
+

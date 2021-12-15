@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="./assets/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Image Upload</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+  </head>
+  <body>
+    <div class="areaProgress">
+        <h4>Uploading...</h4>
+       <div class="progressBar" >
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div class="areaUpload">
+      <div class="title">
+        <span class="made"><img src="https://img.icons8.com/emoji/48/000000/check-mark-emoji.png"/></span>
+        <h5 id="title">Upload your image</h5>
+      </div>
+
+      <div class="dragDrop">
+        <img class="img" src="./assets/image.svg">
+      </div>
+
+      <div class="chooseFile">
+        <p>OU</p>
+        <input type="file" id="inputFile">
+        <button id='btn'>Choose a file</button>
+      </div>
+
+      <div class="copyLinkArea">
+        <div><input type="text"id="imgLink"></div>
+        <div><button onclick="copyLink()" >Copy</button> </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+
+    <script type="text/javascript">
+      //firebase config
+      const firebaseConfig = {
+          apiKey: "AIzaSyBmvWy--XpIDNynvQfwY8tXsyGwCiYDyv0",
+          authDomain: "gallery-40e70.firebaseapp.com",
+          projectId: "gallery-40e70",
+          storageBucket: "gallery-40e70.appspot.com",
+          messagingSenderId: "844352657485",
+          appId: "1:844352657485:web:7c2eebecb6fbeea8592404"
+       }
+       firebase.initializeApp(firebaseConfig)</script>
+    <script src="script.js"></script>
+  </body>
+</html>
+ 
