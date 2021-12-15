@@ -8,12 +8,8 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://ednaldocs.github.io/img-upload/">
       Demo
-    </a>
-    <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
-      Solution
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx">
@@ -44,9 +40,9 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [HTML](https://reactjs.org/)
-- [CSS]
-- [JAVASCRIPT]
+- HTML
+- CSS
+- JAVASCRIPT
 - [Firebase](https://firebase.google.com/)
 
 ## Features
