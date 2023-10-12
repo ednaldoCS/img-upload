@@ -4,7 +4,7 @@ const storage= firebase.storage()
       let file;
       const img= document.querySelector('.img')
       const areaProgress=document.querySelector('.areaProgress')
-      const bar= document.querySelector('.bar')
+      const bar= document.querySelector('#bar')
       const areaUpload=document.querySelector('.areaUpload')
       const made= document.querySelector('.made')
       const chooseFile = document.querySelector('.chooseFile')
@@ -58,8 +58,8 @@ const storage= firebase.storage()
             areaUpload.style.display='none'
            areaProgress.style.display='block'
           let progress= (snapshot.bytesTransferred/snapshot.totalBytes)*100
-          // bar.style.width=`${progress}%`
-          bar.classList.add('uplouding')
+          bar.style.width=progress
+          // bar.classList.add('uplouding')
 
         },function(err){console.log(err)}, async function(){
             let imgUrl;
